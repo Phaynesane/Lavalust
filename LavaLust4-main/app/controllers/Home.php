@@ -11,5 +11,9 @@ class Home extends Controller {
     {
         $this->call->view('login');
     }
+    public function home()
+    {
+        $this->call->view('home');
+    }
 }
 ?>
