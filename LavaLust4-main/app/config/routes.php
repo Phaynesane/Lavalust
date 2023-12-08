@@ -48,3 +48,9 @@ $router->get('/', 'Welcome::index');
 $router->get('/home', 'Home::home');
 $router->get('/register', 'Home::register');
 $router->get('/login', 'Home::login');
+
+/* userController */
+$router->get('/checkout', 'user::checkout');
+
+
+
