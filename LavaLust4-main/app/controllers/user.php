@@ -7,20 +7,20 @@ class user extends Controller {
 
        $this->call->view('user/home');
     }
-     public function addtocart() 
+     public function Shoppingcart() 
      {
 
-        $this->call->view('user/addtocart');
+        $this->call->view('user/Shoppingcart');
      }
      public function checkout() 
      {
 
         $this->call->view('user/checkout');
      }
-     public function TrackOrder() 
+     public function contact() 
      {
 
-        $this->call->view('user/TrackOrder');
+        $this->call->view('user/contact');
      }
 }
 ?>

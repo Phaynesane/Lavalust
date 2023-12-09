@@ -198,7 +198,61 @@
             });
         }
     });
-
+    /*-------------------
+		Add product
+	--------------------- */
+    document.addEventListener('DOMContentLoaded', function () {
+        const productForm = document.getElementById('add-product-form');
+        const productList = document.getElementById('product-list');
+      
+        productForm.addEventListener('submit', function (event) {
+          event.preventDefault();
+      
+          const productName = document.getElementById('product-name').value;
+          const productPrice = document.getElementById('product-price').value;
+      
+          if (productName && productPrice) {
+            addProduct(productName, productPrice);
+            productForm.reset();
+          }
+        });
+      
+        function addProduct(name, price) {
+          const listItem = document.createElement('li');
+          listItem.innerHTML = `<strong>${name}</strong> - $${price}`;
+          productList.appendChild(listItem);
+        }
+      });
+      
+      /*-------------------
+		Inventory
+	--------------------- */
+    function addItem() {
+        var itemName = document.getElementById("itemName").value;
+        var itemQuantity = document.getElementById("itemQuantity").value;
+    
+        if (itemName && itemQuantity) {
+            var table = document.getElementById("inventoryTable");
+            var row = table.insertRow(-1);
+    
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+    
+            cell1.innerHTML = itemName;
+            cell2.innerHTML = itemQuantity;
+            cell3.innerHTML = '<button onclick="removeItem(this)">Remove</button>';
+        }
+    
+        document.getElementById("itemName").value = "";
+        document.getElementById("itemQuantity").value = "";
+    }
+    
+    function removeItem(button) {
+        var row = button.parentNode.parentNode;
+        row.parentNode.removeChild(row);
+    }
+    
     /*-------------------
 		Quantity change
 	--------------------- */

@@ -52,7 +52,14 @@ $router->get('/login', 'Home::login');
 /* userController */
 $router->get('/home', 'user::home');
 $router->get('/checkout', 'user::checkout');
-$router->get('/addtocart', 'user::addtocart');
+$router->get('/Shoppingcart', 'user::Shoppingcart');
+$router->get('/contact', 'user::contact');
+
+/* adminController */
+$router->get('/adminhome', 'admin::adminhome');
+$router->get('/Dashboard', 'admin::Dashboard');
+$router->get('/addproductDash', 'admin::addproductDash');
+$router->get('/inventoryDash', 'admin::inventoryDash');
 
 
 
