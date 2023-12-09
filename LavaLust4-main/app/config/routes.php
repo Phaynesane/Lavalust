@@ -50,7 +50,9 @@ $router->get('/register', 'Home::register');
 $router->get('/login', 'Home::login');
 
 /* userController */
+$router->get('/home', 'user::home');
 $router->get('/checkout', 'user::checkout');
+$router->get('/addtocart', 'user::addtocart');
 
 
 
