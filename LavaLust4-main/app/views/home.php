@@ -34,11 +34,6 @@
             <a href="#"><img src="public/adminuser/logo.png" alt=""></a>
         </div>
         <div class="humberger__menu__cart">
-            <ul>
-                <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
-            </ul>
-            <div class="header__cart__price">item: <span>50.00</span></div>
         </div>
         <div class="humberger__menu__widget">
             <div class="header__top__right__language">
@@ -60,9 +55,9 @@
                 <li><a href="#">Pages</a>
                     <ul class="header__menu__dropdown">
                         <li><a href="./shop-details.html">Shop Details</a></li>
-                        <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                        <li><a href="./checkout.html">Check Out</a></li>
-                        <li><a href="./blog-details.html">Blog Details</a></li>
+                        <li><a href="./shoppingcart.php">Shoping Cart</a></li>
+                        <li><a href="./checkout.php">Check Out</a></li>
+                        <li><a href="./details.php">Details</a></li>
                     </ul>
                 </li>
                 <li><a href="./blog.html">Blog</a></li>
@@ -144,16 +139,6 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-lg-3">
-                    <div class="header__cart">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                            <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
-                        </ul>
-                        <div class="header__cart__price">item: <span>150.00</span></div>
-                    </div>
-                </div>
-            </div>
             <div class="humberger__open">
                 <i class="fa fa-bars"></i>
             </div>
@@ -278,11 +263,11 @@
             <div class="row featured__filter">
                 <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="public/adminuser/img/featured/black.webp">
+                        <div class="featured__item__pic set-bg" data-setbg="@/public/adminuser/img/featured/Black Forest.jpg">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shoppingcart"></i></a></li>
                             </ul>
                         </div>
                         <div class="featured__item__text">
@@ -293,7 +278,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fastfood">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-2.jpg">
+                        <div class="featured__item__pic set-bg" data-setbg="@/img/featured/Choco Nutella.jpg">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
